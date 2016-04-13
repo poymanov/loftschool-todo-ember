@@ -21,6 +21,7 @@ body {
 
 .basic-label {
 	font-weight: 500;
+	display: block;
 }
 
 .new-task {
