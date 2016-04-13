@@ -8,4 +8,6 @@ for(var key in localStorage) {
 	});
 }
 
+console.log(data);
+
 export default data;

@@ -13,7 +13,7 @@
 {{#each model as |item|}}
 	
   <label class="basic-label">
-  	<input type="checkbox" checked="{{ if item.is_done "checked"  }}" id="inlineCheckbox1" value="option1"> 		  	
+    <input type="checkbox" checked={{if item.is_done 'checked'}} {{action 'changeTask' item.text item.is_done preventDefault=false}}>
     {{item.text}}
 	</label>
 
