@@ -1,0 +1,22 @@
+<div class="new-task">
+	<div class="container">
+        <form class="form-inline">
+          <div class="form-group">
+            {{input type="text" value=taskName placeholder="Новая задача" class="form-control"}}
+          </div>
+          <button {{action 'addTask'}} class="btn btn-primary">Создать</button>
+        </form>
+    </div>
+</div>
+
+<div class="todo__list">
+{{#each model as |item|}}
+	
+  <label class="basic-label">
+  	<input type="checkbox" checked="{{ if item.is_done "checked"  }}" id="inlineCheckbox1" value="option1"> 		  	
+    {{item.text}}
+	</label>
+
+   
+{{/each}}
+</div>

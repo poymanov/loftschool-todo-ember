@@ -1,0 +1,23 @@
+body {
+  margin: 12px 16px;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 12pt;
+}
+
+.main {
+  padding: 25px 10px 10px 15px;
+  border: 1px solid #ddd;
+  border-top: 0;
+}
+
+.main-header {
+  margin-bottom: 15px;
+}
+
+.basic-label {
+  font-weight: 500;
+}
+
+.new-task {
+  margin-bottom: 15px;
+}

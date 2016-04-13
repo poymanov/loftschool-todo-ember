@@ -1,3 +1,11 @@
-<h2 id="title">Welcome to Ember</h2>
-
-{{outlet}}
+<div class="container">
+  <h1 class="main-header">{{ appName }}</h1>
+  <ul class="nav nav-tabs">
+    <li role="presentation" class="active"><a href="/">Все</a></li>
+    <li role="presentation"><a href="#">Готовые</a></li>
+    <li role="presentation"><a href="#">Невыполненные</a></li>
+  </ul>
+  <div class="main">
+		{{outlet}}
+  </div>
+</div>
