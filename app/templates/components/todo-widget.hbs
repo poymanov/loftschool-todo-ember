@@ -1,0 +1,8 @@
+<div class="todo__list">
+	{{#each tasks as |item|}}
+	  <label class="basic-label">
+	    <input type="checkbox" checked={{if item.is_done 'checked'}} {{action 'changeTask' item.text item.is_done preventDefault=false}}>
+	    {{item.text}}
+		</label>
+	{{/each}}
+</div>

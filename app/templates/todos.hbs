@@ -8,15 +8,4 @@
         </form>
     </div>
 </div>
-
-<div class="todo__list">
-{{#each model as |item|}}
-	
-  <label class="basic-label">
-    <input type="checkbox" checked={{if item.is_done 'checked'}} {{action 'changeTask' item.text item.is_done preventDefault=false}}>
-    {{item.text}}
-	</label>
-
-   
-{{/each}}
-</div>
+{{todo-widget tasks=model}}
