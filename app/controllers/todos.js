@@ -5,7 +5,8 @@ export default Ember.Controller.extend({
   actions: {
     addTask: function() {
       // Пишем задачу в localStorage
-      // localStorage.setItem(this.get('taskName'), false);
+      localStorage.setItem(this.get('taskName'), false);
+      console.log("Задача добавлена");
     }
   }
 });
